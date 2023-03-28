@@ -1,6 +1,24 @@
+* {
+    margin: auto;
+    padding: 5px;
+}
+
+
 h1 {
     text-align: center;
     font-family: 'Georgia';
     color: whitesmoke;
     background-color: rgb(205, 92, 171);
+}
+
+.hero {
+    text-align: left;
+    font-family: 'Georgia';
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+textarea {
+    align-items: left;
 }
