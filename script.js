@@ -9,9 +9,11 @@ function getApi(city) {
     fetch(weatherURL)
     .then(function (city) {
         console.log(city);
+      
     })
     // console.log("You clicked a button");
 };
+
 
  btn.addEventListener("click", getApi);
 
