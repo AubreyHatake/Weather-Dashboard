@@ -4,6 +4,7 @@ var weatherApi = "7383a191eb96b83d8fa7439817a5636c";
 var city;
 
 
+// fetch Weather api function 
 function getApi(city) {
     var weatherURL = 'http://api.openweathermap.org/geo/1.0/direct?q=' + city + '&limit=5&appid=' + weatherApi;
     fetch(weatherURL)
@@ -22,5 +23,4 @@ function getApi(city) {
 
 
 
-// fetch Weather api function 
 
