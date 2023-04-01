@@ -19,10 +19,10 @@ h1 {
     
 }
 
-textarea {
+input {
     float: left;
-    height: 30%;
-    width: 80%;
+    height: 40%;
+    width: 75%;
 }
 
 button {
