@@ -7,8 +7,8 @@
 h1 {
     text-align: center;
     font-family: 'Georgia';
-    color: whitesmoke;
-    background-color: rgb(205, 92, 171);
+    color: rgb(80, 57, 85);
+    background-color: rgb(153, 193, 154);
 }
 
 .hero {
@@ -21,16 +21,18 @@ h1 {
 
 textarea {
     float: left;
-    height: 80%;
-    width: 20%;
+    height: 30%;
+    width: 80%;
 }
 
 button {
     display: block;
+    margin: 5px;
     padding: 10px;
-    float: left;
     font-weight: bold;
     height: 20%;
     width: 10%;
-    background-color:rgb(205, 92, 171);
+    font: 'Arial';
+    background-color:rgb(164, 193, 169);
+    border-color: rgb(236, 250, 239);
 }
