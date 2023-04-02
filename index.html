@@ -15,17 +15,18 @@
         </div>
         <input id="search-city" type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
         <button id="search-button" class="btn"> Search </button>
+        <!-- list of prior searched cities -->
+        <ul id="city-results" class="list-group mt-4"></ul>
       </div>
 
     <div> 
-        <!-- <button class="Rochester"> Rochester </button>
-        <button class="Miami"> Miami </button>
-        <button class="Atlanta"> Atlanta </button>
-        <button class="Denver"> Denver </button>
-        <button class="Seattle"> Seattle </button>
-        <button class="slc"> Salt Lake City </button>
-        <button class="SanAnt"> San Antonio </button>
-        <button class="Nashville"> Nashville </button> -->
+       <!-- // Right side content showing current weather and five day forecast displays on search  -->
+        <div id="content-right" class="col-md-9 pt-4">
+            <!-- //Current weather displayed on top -->
+            <div id="current-weather" class="border rounded"></div>
+            <!--// Five day forecast below the current weather -->
+            <div id="five-day-forecast" class="mt-5"></div>
+        </div>
     </div>
     <div>
 
