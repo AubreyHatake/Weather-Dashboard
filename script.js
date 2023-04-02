@@ -1,10 +1,12 @@
 // Variables will go here 
 var btn = document.querySelector('.btn');
 var weatherApi = "7383a191eb96b83d8fa7439817a5636c";
+var currentCity= "";
+var lastCity = "";
 
 
 
-// fetch Weather api function 
+// Weather api function 
 function getApi(response) {
     var weatherURL = 'http://api.openweathermap.org/geo/1.0/direct?q=' + response + '&limit=5&appid=' + weatherApi;
     fetch(weatherURL)

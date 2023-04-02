@@ -2,7 +2,7 @@
 DEPLOYED SITE LINK: https://aubreyhatake.github.io/Weather-Dashboard/
 
 In this site users are able to search for the weather forecast for the next five days by city name.
- Users are able to search a city or choose a city from the array of buttons on the site. 
+ 
 
  ## User Story 
 AS A traveler
