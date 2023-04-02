@@ -5,20 +5,28 @@ var currentCity= "";
 var lastCity = "";
 
 
-
-// Weather api function 
-function getApi(response) {
-    var weatherURL = 'http://api.openweathermap.org/geo/1.0/direct?q=' + response + '&limit=5&appid=' + weatherApi;
-    fetch(weatherURL)
-    .then(function (response) {
+// Function to get and display the current conditions on Open Weather Maps
+var getCurrentConditions = (event) => {
+    // Obtain city name from the search box
+    var city = $('#search-city').val();
+    currentCity= $('#search-city').val();
+    // Set the queryURL to fetch from API using weather search - added units=imperial to fix
+    var queryURL = "https://api.openweathermap.org/data/2.5/forecast?" + city + "&units=imperial" + "&APPID=" + weatherApi;
+    fetch(queryURL)
+    .then((response) => {
         console.log(response);
-      
+        return response.json();
     })
-    // console.log("You clicked a button");
+    // .then((response) => {
+        // Save city to local storage
+        // $('#search-city')
 };
+// })};
+
+btn.addEventListener("click", getCurrentConditions);
 
 
- btn.addEventListener("click", getApi);
+
 
 
 
