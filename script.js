@@ -11,8 +11,8 @@ var getCurrentConditions = (event) => {
     var city = $('#search-city').val();
     currentCity= $('#search-city').val();
     // Set the queryURL to fetch from API using weather search - added units=imperial to fix
-    var queryURL = "http://api.openweathermap.org/geo/1.0/direct?q=" + city + "&units=imperial" + "&APPID=" + weatherApi;
-    fetch(queryURL)
+    var weatherURL = "http://api.openweathermap.org/geo/1.0/direct?q=" + city + "&units=imperial" + "&APPID=" + weatherApi;
+    fetch(weatherURL)
     .then((response) => {
         console.log(response);
         return response.json();
