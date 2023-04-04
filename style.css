@@ -11,6 +11,47 @@ h1 {
     background-color: rgb(153, 193, 154);
 }
 
+h2 {
+    text-align: left;
+    font-family: 'Georgia';
+    width: 20%;
+    color: rgb(80, 57, 85);
+    background-color: rgb(210, 223, 210);
+}
+
+li {
+    text-align: left;
+    font-family: 'Georgia';
+    width: 20%;
+    color: rgb(80, 57, 85);
+    background-color: rgb(210, 223, 210);
+}
+
+ul {
+    text-align: left;
+    font-family: 'Georgia';
+    width: 20%;
+    color: rgb(80, 57, 85);
+    background-color: rgb(210, 223, 210);
+}
+
+a {
+    display: block;
+    text-align: left;
+    font-family: 'Georgia';
+    width: 20%;
+    color: rgb(80, 57, 85);
+    background-color: rgb(210, 223, 210);
+}
+
+.hide {
+    display:none;
+}
+
+.show {
+    display: block;
+}
+
 .hero {
     text-align: left;
     font-family: 'Georgia';
@@ -22,7 +63,7 @@ h1 {
 input {
     float: left;
     height: 60%;
-    width: 15%;
+    width: 20%;
 }
 
 .button {
@@ -35,4 +76,10 @@ input {
     font: 'Arial';
     background-color:rgb(164, 193, 169);
     border-color: rgb(236, 250, 239);
+}
+
+.current {
+    display: block;
+    text-align: center;
+    border-style: solid;
 }
