@@ -47,23 +47,30 @@ function displayCurrentConditions (data) {
     }
     // this is suppose to show the names of the data types, temp, wind speed, and humidity.
     names.classList.add
-    let h2 = document.createElement('h2');
+    var h2 = document.createElement('h2');
     h2.textContent = data.name;
     currentWeather.append(h2);
-    let li = document.createElement('li');
-    li.textContent = data.main.temp;
+    var li = document.createElement('li');
+    li.textContent = "Temp:";
     currentWeather.append(li);
-    let ul = document.createElement('ul');
-    ul.textContent = data.wind.speed;
+    var ul = document.createElement('ul');
+    ul.textContent = data.main.temp;
     currentWeather.append(ul);
-    let a = document.createElement('a');
-    a.textContent = data.main.humidity;
+    var li = document.createElement('li');
+    li.textContent = "Wind Speed:";
+    currentWeather.append(li);
+    var a = document.createElement('a');
+    a.textContent = data.main.wind;
     currentWeather.append(a);
+    var li = document.createElement('li');
+    li.textContent = "Huminity:"
+    currentCity.append(li);
+    var ul = document.createElement('ul');
+    ul.textContent = data.main.humidity;
+    currentCity.append(ul);
 
-}
-    
 
-
+};
 
 // this will get the city from the local storage and display the last searched city 
 results.innerHTML = localStorage.getItem("city");
@@ -99,8 +106,6 @@ btn.addEventListener("click", function () {
     var city = $('#search-city').val();
     getCurrentConditions(city);
 });
-
-
 
 
 
