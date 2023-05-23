@@ -8,7 +8,7 @@
     <title>Weather Dashboard</title>
 </head>
 <head>
-    <h1>Weather Dashboard</h1>
+    <header class="one">Weather Dashboard</header>
 </head>
 <body>
           <div class="hero">Search for a city</div>  
@@ -16,7 +16,7 @@
         <input id="search-city" type="text" class="form-control" placeholder="" aria-label="" aria-describedby="basic-addon1">
         <button id="search-button" class="button"> Search </button>
         <!-- list of prior searched cities -->
-        <ul id="city-results" class="list-group mt-4"></ul>
+        <ul id="city-results" ></ul>
       </div>
 
     <div> 
@@ -24,9 +24,6 @@
         <div id="content-right" class="col-md-9 pt-4">
             <!-- //Current weather displayed on top -->
             <div id="current-weather" class="border rounded"></div>
-           <li id="temp" class="hide"> Temp: </li> 
-           <li id="wind-speed" class="hide">Wind Speed </li>
-            <li id="humidity" class="hide"> Humidity </li>
             <!--// Five day forecast below the current weather -->
             <div id="five-day-forecast" class="mt-5"></div>
         </div>
