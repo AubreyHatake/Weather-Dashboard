@@ -1,4 +1,5 @@
 // Variables will go here 
+// these variables have to do with the weather api or buttons on the page
 var btn = document.querySelector('.button');
 var weatherApi = "7383a191eb96b83d8fa7439817a5636c";
 var currentCity= "";
@@ -7,6 +8,11 @@ var results = document.querySelector('#city-results');
 var currentWeather = document.querySelector('#current-weather');
 var names = document.querySelector('.hide');
 var fiveDays = document.querySelector('#five-day-forecast');
+// these variables have to do with getting the current date to display 
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
 
 
 
@@ -32,9 +38,9 @@ var getCurrentConditions = (city) => {
     .then(data => {
         console.log("CURR DAY: ", data); 
         getFiveDays(data.coord)
-      displayCurrentConditions(data);
-      displayCurrent(data);  
-
+        displayCurrentConditions(data);
+        displayCurrent(data);  
+        
     }) 
     
     
@@ -79,11 +85,16 @@ function displayCurrent(data) {
     var li = document.createElement('li');
     li.textContent = data.wind.speed;
     currentWeather.append(li);
+    currentDate();
 };
 
 // this will get the city from the local storage and display the last searched city 
 results.innerHTML = localStorage.getItem("city");
 
+function currentDate() {
+today = mm + '/' + dd + '/' + yyyy;
+document.write(today);
+};
 // this function gets the five day forecast from the api used. 
 function getFiveDays (coord) {
     var fiveDayURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${coord.lat}&lon=${coord.lon}&appid=${weatherApi}`
@@ -108,7 +119,7 @@ function displayFiveDays (data) {
    if (fiveDays.firstChild) {
     fiveDays.firstChild.remove();
    }
-   
+   var h1 = 
 }
 
 
