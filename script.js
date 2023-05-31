@@ -44,7 +44,7 @@ var getCurrentConditions = (city) => {
     }) 
     
     
-};
+}
 
 getCurrentConditions();
 
@@ -119,8 +119,8 @@ function displayFiveDays (data) {
    if (fiveDays.firstChild) {
     fiveDays.firstChild.remove();
    }
-   var h1 = 
-}
+ 
+};
 
 
 btn.addEventListener("click", function () {
