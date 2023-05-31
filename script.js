@@ -9,10 +9,10 @@ var currentWeather = document.querySelector('#current-weather');
 var names = document.querySelector('.hide');
 var fiveDays = document.querySelector('#five-day-forecast');
 // these variables have to do with getting the current date to display 
-var today = new Date();
-var dd = String(today.getDate()).padStart(2, '0');
-var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-var yyyy = today.getFullYear();
+// var today = new Date();
+// var dd = String(today.getDate()).padStart(2, '0');
+// var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+// var yyyy = today.getFullYear();
 
 
 
@@ -57,7 +57,7 @@ function displayCurrentConditions (data) {
     // names.classList.add
     var h1 = document.createElement('h1');
     h1.textContent = data.main.name;
-    currentWeather.append(div);
+    currentWeather.append(h1);
     var h2 = document.createElement('h2');
     h2.textContent = "Temp:";
     currentWeather.append(h2);
@@ -85,7 +85,7 @@ function displayCurrent(data) {
     var li = document.createElement('li');
     li.textContent = data.wind.speed;
     currentWeather.append(li);
-    currentDate();
+    // currentDate();
 };
 
 // this will get the city from the local storage and display the last searched city 
