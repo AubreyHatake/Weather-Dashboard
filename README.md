@@ -33,4 +33,4 @@ THEN I am again presented with current and future conditions for that city
 ## My site 
 
 This site shows the current temp, wind speed, and humidity of any city you search
-![screenshot](Screenshot%202023-05-30%20195542.jpg)
+![screenshot](weather-dashboard.jpg)
